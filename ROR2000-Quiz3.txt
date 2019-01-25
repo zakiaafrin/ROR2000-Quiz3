@@ -1,0 +1,206 @@
+1 - Which one of the following is the right way of defining a function in PHP?
+a) function { function body }
+b) data type functionName(parameters) { function body }
+c) functionName(parameters) { function body }
+d) function fumctionName(parameters) { function body }
+
+Answer : d
+
+2 - What will happen in this function call?
+
+   <?php
+   function calc($price, $tax)    
+   {
+       $total = $price + $tax;
+   }
+   $pricetag = 15;
+   $taxtag = 3;
+   calc($pricetag, $taxtag);    
+   ?>
+
+a) Call By Value
+b) Call By Reference
+c) Default Argument Value
+d) Type Hinting
+
+Answer : a
+
+3 - What will be the output of the following PHP code?
+
+   <?php
+   function calc($price, $tax="")
+   {
+       $total = $price + ($price * $tax);
+       echo "$total";
+   }
+   calc(42);    
+   ?>
+
+a) Error
+b) 0
+c) 42
+d) 84
+
+Answer : c
+
+4 - What will be the output of the following PHP code?
+
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo "I like " . $cars[2] . ", " . $cars[1] . " and " . $cars[0] . ".";
+?>
+
+a) I like Volvo, Toyota and BMW.
+b) I like Volvo, BMW and Toyota.
+c) I like BMW, Volvo and Toyota.
+d) I like Toyota, BMW and Volvo.
+
+Answer: d
+
+5 - What will be the output of the following PHP code?
+
+<?php
+$fname = array("Peter", "Ben", "Joe");
+$age = array("35", "37", "43");
+$c = array_combine($age, $fname);
+print_r($c);
+?>
+
+a) Array ( Peter Ben Joe )
+b) Array ( [Peter] => 35 [Ben] => 37 [Joe] => 43 )
+c) Array ( 35 37 43 )
+d) Array ( [35] => Peter [37] => Ben [43] => Joe )
+
+Answer: d
+
+6 - PHP’s numerically indexed array begin with position ___________
+a) 1
+b) 2
+c) 0
+d) -1
+
+Answer: c
+
+7 - Which of the following are correct ways of creating an array?
+i) state[0] = “karnataka”;
+ii) $state[] = array(“karnataka”);
+iii) $state[0] = “karnataka”;
+iv) $state = array(“karnataka”);
+
+a) iii) and iv)
+b) ii) and iii)
+c) Only i)
+d) ii), iii) and iv)
+
+Answer: a
+
+8 - Which function will return true if a variable is an array or false if it is not?
+
+a) this_array()
+b) is_array()
+c) do_array()
+d) in_array()
+
+Answer: b
+
+9 - Which in-built function will add a value to the end of an array?
+
+a) array_unshift()
+b) into_array()
+c) inend_array()
+d) array_push()
+
+Answer: d
+
+10 - Which function returns an array consisting of associative key/value pairs?
+
+a) count()
+b) array_count()
+c) array_count_values()
+d) count_values()
+
+Answer: c
+
+11 - The practice of separating the user from the true inner workings of an application through well-known interfaces is known as _________
+
+a) Polymorphism
+b) Inheritance
+c) Encapsulation
+d) Abstraction
+
+Answer: c
+
+12 - The practice of creating objects based on predefined classes is often referred to as..
+
+a) class creation
+b) object creation
+c) object instantiation
+d) class instantiation
+
+Answer: d
+
+13 - Which one of the following property scopes is not supported by PHP?
+a) friendly
+b) final
+c) public
+d) static
+
+Answer: a
+
+14 - Which one of the following can be used to instantiate an object in PHP assuming class name to be Foo?
+
+a) $obj = new $foo;
+b) $obj = new foo;
+c) $obj = new foo ();
+d) obj = new foo ();
+
+Answer: c
+
+15 - Which one of the following is the right way to invoke a method?
+
+a) $object->methodName();
+b) object->methodName();
+c) object::methodName();
+d) $object::methodName();
+
+Answer: a
+
+16 - Which of the following is/are the right way to declare a method?
+i) function functionName() { function body }
+ii) scope function functionName() { function body }
+iii) method methodName() { method body }
+iv) scope method methodName() { method body }
+
+a) Only ii)
+b) Only iv)
+c) i) and ii)
+d) iii) and iv)
+
+Answer: c
+
+17 - PHP recognizes constructors by the name_________
+
+a) classname()
+b) _construct()
+c) function _construct()
+d) function __construct()
+
+Answer: d
+
+18 - What does PHP stand for?
+
+Answer: PHP stands for Hypertext Preprocessor,
+
+19 - What is the difference between == and === operator in php?
+
+Answer:  == is used to check if the values of the two operands are equal or not. 
+     And === checks the values as well as the type of operands.
+
+20 - What is a session in PHP and how do you remove data from a session?
+
+Answer: To make data accessible across the various pages of an entire website is to use a PHP Session.
+            Sessions are a simple way to store data for individual users against a unique session ID. 
+
+        To remove a specific data from a session, we use the function unset().
+            And to destroy all the currently active session variables, we use session destroy() function.
+            It destroys the entire session.
